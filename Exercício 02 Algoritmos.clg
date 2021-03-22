@@ -1,0 +1,22 @@
+algoritmo Modulo;
+// Síntese
+//  Objetivo:  Calcular módulo de um número
+//  Entrada :  Numero
+//  Saída   :  Modulo
+
+
+principal
+	// Declarações
+real Numero;
+inteiro Modulo;
+	// Instruções
+escreval (" Transformarei um número em módulo! ");
+escreval ("");
+escreva (" Escreva um valor numérico para transformar em módulo: ");
+leia (Numero);
+escreval ("");
+se (Numero < 0) então
+Modulo = Numero * (-1);
+senão Modulo = Numero;
+escreval (" O módulo de: ",Numero," é |", Modulo,"|");
+fimPrincipal

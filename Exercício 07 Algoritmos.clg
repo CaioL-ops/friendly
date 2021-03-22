@@ -1,0 +1,23 @@
+algoritmo Diferença, número;
+// Síntese
+//  Objetivo:  Ler 2 números e apresentar a diferença entre eles
+//  Entrada :  N1 e N2
+//  Saída   :  Diferença
+
+
+principal
+	// Declarações
+inteiro N1, N2, Diferença;
+	// Instruções
+escreval (" Te direi a diferença entre 2 números! ");
+escreva (" Me informe o valor do primeiro número: ");
+leia (N1);
+escreva (" Me informe o valor do segundo número: ");
+leia (N2);
+se (N1 > N2) então
+Diferença = N1 - N2
+escreval (" A diferença entre ",N1," e ",N2," é de: ",Diferença,");
+senão
+Diferença = N2 - N1;
+escreval (" A diferença entre ",N2," e ",N1," é de: ",Diferença,");
+fimPrincipal

@@ -1,0 +1,23 @@
+algoritmo Provedora;
+// Síntese
+//  Objetivo:  Calcular o valor a ser pago a uma provedora de internet com base na quantidade de horas utilizadas pelo usuário
+//  Entrada :  Horas gastas // InfoExtra: Taxa até 20 horas gastas = R$ 30,00 + (10% por horas gastas excendentes)
+//  Saída   :  Valor
+
+
+principal
+	// Declarações
+inteiro Horas gastas;
+real Valor, Taxa;
+	// Instruções
+Taxa = R$ 30,00;
+escreval (" Bem-vindo a sua provedora de internet tecnologia UCB! ");
+escreva (" Me informe quantas horas de internet você usou: ");
+leia (Horas gastas);
+se (Horas gastas > 20) então
+Valor = Taxa + ((Horas gastas - 20) * 3,00);
+escreval (" Você deve pagar: R$", Valor);
+senão
+Valor = Taxa;
+escreval (" Você deve pagar: R$", Valor);
+fimPrincipal

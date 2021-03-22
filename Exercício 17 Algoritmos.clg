@@ -1,0 +1,24 @@
+algoritmo Vida, anos;
+// Síntese
+//  Objetivo:  Descobrir quantos anos e dias alguém já viveu baseado na sua data de nascimento 
+//  Entrada :  Ano em que a pessoa nasceu, ano atual
+//  Saída   :  Quantos dias aproximadamente ela já viveu
+
+
+principal
+	// Declarações
+inteiro AnoDeNascimento, AnoAtual, Dias, Anos;
+	// Instruções
+escreval (" Te direi quantos dias e anos você viveu! ");
+escreva (" Me informe em que ano você nasceu: ");
+leia (AnoDeNasciemnto);
+escreva (" Me informe em que ano estamos: ");
+leia (AnoAtual);
+Anos = AnoAtual - AnoDeNascimento;
+Dias = 365 * anos;
+se (Anos < 0) então
+escreval (" Me parece que você não nasceu ainda! ");
+senão
+escreval (" Você já viveu aproximadamente: ",Dias," Dias");
+escreval (" Em que anos você viveu aproximadamente: ",Anos," Anos");
+fimPrincipal

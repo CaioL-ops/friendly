@@ -1,0 +1,35 @@
+algoritmo Nome, altura;
+// Síntese
+//  Objetivo:  Analisar os dados de 3 pessoas (Nome e Altura) e retornar os dados da menor pessoa
+//  Entrada :  Nome e Altura de cada um
+//  Saída   :  Nome e Altura da menor pessoa
+
+
+principal
+	// Declarações
+texto Nome1, Nome2, Nome3;
+real Altura1, Altura2, Altura3;
+	// Instruções
+escreval (" Retornarei os dados da pessoa mais baixa! ");
+escreval (" Primeira Pessoa ");
+escreva (" Informe seu nome: ");
+leia (Nome1);
+escreva (" Informe sua altura: ");
+leia (Altura1);
+escreval (" Segunda Pessoa ");
+escreva (" Informe seu nome: ");
+leia (Nome2);
+escreva (" Informe sua altura: ");
+leia (Altura2);
+escreval (" Terceira Pessoa ");
+escreva (" Informe seu nome: ");
+leia (Nome3);
+escreva (" Informe sua altura: ");
+leia (Altura3);
+se (Altura1 < Altura2 e Altura1 < Altura3) então
+escreval (" A pessoa ",Nome1," é a pessoa mais baixa de todas (",Altura1,")");
+se (Altura2 < Altura3 e Altura2 < Altura1) então
+escreval (" A pessoa ",Nome2," é a pessoa mais baixa de todas (",Altura2,")");
+se (Altura3 < Altura2 e Altura3 < Altura1) então
+escreval (" A pessoa ",Nome3," é a pessoa mais baixa de todas (",Altura3,")");
+fimPrincipal

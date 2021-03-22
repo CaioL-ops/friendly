@@ -1,0 +1,34 @@
+algoritmo DDD;
+// Síntese
+//  Objetivo:  Identificar o Estado do DDD fornecido pelo usuário com base em uma tabela
+//  Entrada :  DDD
+//  Saída   :  Estado
+
+
+principal
+	// Declarações
+inteiro DDD;
+texto Estado;
+	// Instruções
+escreval (" Central de DDD do Estado! ");
+escreva (" Me informe seu DDD: ");
+leia (DDD);
+ESTADO = " Uma cidade no Brasil sem indentificação ";
+se (DDD == 61) então
+ESTADO = "Brasília";
+se (DDD == 71) então
+ESTADO = "Salvador";
+se (DDD == 11) então
+ESTADO = "São Paulo";
+se (DDD == 21) então
+ESTADO = "Rio de Janeiro";
+se (DDD == 32) então
+ESTADO = "Juiz de Fora";
+se (DDD == 19) então
+ESTADO = "Campinas";
+se (DDD == 27) então
+ESTADO = "Vitória";
+se (DDD == 31) então
+ESTADO = "Belo Horizonte";
+escreval (" Seu DDD é de: ", ESTADO);
+fimPrincipal

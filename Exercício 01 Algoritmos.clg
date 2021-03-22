@@ -1,0 +1,30 @@
+algoritmo Multar;
+// Síntese
+//  Objetivo:  Multar um motorista que ultrapassa o limite de velocidade (20% = R$ 130, 50% = R$ 195)
+//  Entrada :  Placa, velocidade
+//  Saída   :  Multa
+
+
+principal
+	// Declarações
+inteiro Velocidade, Limite, Multa, Ultrapassado;
+texto Placa;
+logico Multado;
+	// Instruções
+Limite = 80
+Multado = falso;
+escreval(" Bem-Vindo a central de multas! ");
+escreva (" > Informe a placa do veículo: ");
+leia (Placa);
+escreva (" > Informe a que velocidade ele estava: ")
+leia (Velocidade);
+se (Velocidade/Limite - 1 < 0) então 
+Multado = falso;
+escreval (" O motorista do veículo ",Placa," estava dentro dos limites de velocidade.");
+senão Multado = verdadeiro;
+Ultrapassado = (Velocidade/Limite - 1)*100;
+se (Velocidade/Limite - 1 < = 0.2) então
+Multa = 130 senão
+Multa = 195;
+escreval (" O motorista do veículo ",Placa," será multado em: R$ ",Multa," por ultrapassar os limites de velocidade em ","(" Ultrapassado "%)");
+fimPrincipal

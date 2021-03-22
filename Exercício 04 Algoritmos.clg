@@ -1,0 +1,28 @@
+algoritmo Tratamento,sexo,nome;
+// Síntese
+//  Objetivo:  Apresentar o nome do usuário como Sr. ou Sra. de acordo com o sexo dele
+//  Entrada :  Nome, Sexo
+//  Saída   :  Tratamento
+
+
+principal
+	// Declarações
+real Peso, Altura;
+texto Nome, Tratamento;
+inteiro Sexo;
+	// Instruções
+escreval (" Bem-Vindo! ")
+escreva (" Me diga o seu nome: ");
+leia (Nome);
+escreva (" Me informe a sua altura: ");
+leia (Altura);
+escreva(" Informe o código seu sexo (0 = M e 1 = F): ");
+leia (Sexo);
+se (Sexo < 1) então
+Tratamento = "Ilmo Sr.";
+Peso = (72.5 * Altura) - 58;
+senão Tratamento = "Ilma Sra.";
+Peso = (62.1 * Altura) - 44.7;
+escreval (" Olá, ",Tratamento," ",Nome);
+escreval (" Seu peso ideal deve ser: ",Peso," KG");
+fimPrincipal
